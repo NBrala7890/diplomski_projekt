@@ -1,0 +1,21 @@
+{
+  "description": "Diacritic errors in Croatian - č/ć/š/ž/đ confusion and omission",
+  "weight": 0.33,
+  "test_pairs": [
+    {"incorrect": "moč", "correct": "moć", "note": "č instead of ć"},
+    {"incorrect": "noč", "correct": "noć", "note": "č instead of ć"},
+    {"incorrect": "kuča", "correct": "kuća", "note": "č instead of ć"},
+    {"incorrect": "sreca", "correct": "sreća", "note": "Missing diacritic on c"},
+    {"incorrect": "zivot", "correct": "život", "note": "Missing diacritic on z"},
+    {"incorrect": "covjek", "correct": "čovjek", "note": "Missing diacritic on c"},
+    {"incorrect": "skola", "correct": "škola", "note": "Missing diacritic on s"},
+    {"incorrect": "zelim", "correct": "želim", "note": "Missing diacritic on z"},
+    {"incorrect": "rucak", "correct": "ručak", "note": "Missing diacritic on c"},
+    {"incorrect": "poceti", "correct": "početi", "note": "Missing diacritic on c"},
+    {"incorrect": "djak", "correct": "đak", "note": "dj instead of đ"},
+    {"incorrect": "medju", "correct": "među", "note": "dj instead of đ"},
+    {"incorrect": "rodjen", "correct": "rođen", "note": "dj instead of đ"},
+    {"incorrect": "slusati", "correct": "slušati", "note": "Missing diacritic on s"},
+    {"incorrect": "pisac", "correct": "pisač", "note": "Missing diacritic on c"}
+  ]
+}

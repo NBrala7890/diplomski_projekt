@@ -1,0 +1,13 @@
+# Trained models (too large for git)
+models/*.bin
+
+# Corpus (too large for git - 2.5GB)
+data/corpus_clean.txt
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log

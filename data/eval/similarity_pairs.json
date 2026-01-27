@@ -1,0 +1,21 @@
+{
+  "description": "Word similarity pairs for Croatian - semantic relatedness evaluation",
+  "note": "Expected similarity values are approximate human judgments (0-1 scale)",
+  "test_pairs": [
+    {"word1": "škola", "word2": "učenik", "expected_similarity": 0.6},
+    {"word1": "škola", "word2": "obrazovanje", "expected_similarity": 0.65},
+    {"word1": "pisati", "word2": "čitati", "expected_similarity": 0.5},
+    {"word1": "auto", "word2": "vozilo", "expected_similarity": 0.7},
+    {"word1": "kuća", "word2": "stan", "expected_similarity": 0.6},
+    {"word1": "liječnik", "word2": "bolnica", "expected_similarity": 0.55},
+    {"word1": "učitelj", "word2": "učenik", "expected_similarity": 0.6},
+    {"word1": "knjiga", "word2": "čitanje", "expected_similarity": 0.5},
+    {"word1": "more", "word2": "plaža", "expected_similarity": 0.55},
+    {"word1": "grad", "word2": "selo", "expected_similarity": 0.45},
+    {"word1": "pas", "word2": "mačka", "expected_similarity": 0.5},
+    {"word1": "dan", "word2": "noć", "expected_similarity": 0.45},
+    {"word1": "ljeto", "word2": "zima", "expected_similarity": 0.45},
+    {"word1": "sunce", "word2": "mjesec", "expected_similarity": 0.5},
+    {"word1": "mama", "word2": "tata", "expected_similarity": 0.65}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "description": "ije/je alternation errors in Croatian - common spelling mistakes",
+  "weight": 0.33,
+  "test_pairs": [
+    {"incorrect": "riješenje", "correct": "rješenje", "note": "Extra 'i' in ije form"},
+    {"incorrect": "mlieko", "correct": "mlijeko", "note": "Missing 'j' in ije form"},
+    {"incorrect": "vriemena", "correct": "vremena", "note": "Incorrect ije instead of e"},
+    {"incorrect": "biel", "correct": "bijel", "note": "Missing 'j' in ije form"},
+    {"incorrect": "diel", "correct": "dio", "note": "Incorrect form"},
+    {"incorrect": "tielo", "correct": "tijelo", "note": "Missing 'j' in ije form"},
+    {"incorrect": "grieh", "correct": "grijeh", "note": "Missing 'j' in ije form"},
+    {"incorrect": "sniega", "correct": "snijega", "note": "Missing 'j' in ije form"},
+    {"incorrect": "liek", "correct": "lijek", "note": "Missing 'j' in ije form"},
+    {"incorrect": "ciena", "correct": "cijena", "note": "Missing 'j' in ije form"},
+    {"incorrect": "cviet", "correct": "cvijet", "note": "Missing 'j' in ije form"},
+    {"incorrect": "sviet", "correct": "svijet", "note": "Missing 'j' in ije form"},
+    {"incorrect": "viesti", "correct": "vijesti", "note": "Missing 'j' in ije form"},
+    {"incorrect": "liep", "correct": "lijep", "note": "Missing 'j' in ije form"},
+    {"incorrect": "rieč", "correct": "riječ", "note": "Missing 'j' in ije form"}
+  ]
+}

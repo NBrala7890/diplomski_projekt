@@ -1,0 +1,56 @@
+{
+  "description": "Morphological variations in Croatian - testing word form coverage",
+  "note": "For each base word, the model should recognize related morphological forms",
+  "test_cases": [
+    {
+      "base_word": "učitelj",
+      "expected_forms": ["učitelja", "učitelju", "učitelje", "učitelji", "učiteljica"],
+      "note": "Noun declension + feminine form"
+    },
+    {
+      "base_word": "pisati",
+      "expected_forms": ["pišem", "piše", "pisao", "pisala", "pišući", "napisati"],
+      "note": "Verb conjugation + aspect"
+    },
+    {
+      "base_word": "lijep",
+      "expected_forms": ["lijepa", "lijepo", "lijepog", "lijepoj", "ljepši"],
+      "note": "Adjective declension + comparative"
+    },
+    {
+      "base_word": "kuća",
+      "expected_forms": ["kuće", "kući", "kuću", "kućom", "kuće"],
+      "note": "Noun declension"
+    },
+    {
+      "base_word": "raditi",
+      "expected_forms": ["radim", "radi", "radio", "radila", "radeći"],
+      "note": "Verb conjugation"
+    },
+    {
+      "base_word": "dobar",
+      "expected_forms": ["dobra", "dobro", "dobrog", "dobroj", "bolji"],
+      "note": "Adjective declension + comparative"
+    },
+    {
+      "base_word": "čovjek",
+      "expected_forms": ["čovjeka", "čovjeku", "čovjekom", "ljudi", "čovjekova"],
+      "note": "Noun declension + suppletive plural"
+    },
+    {
+      "base_word": "govoriti",
+      "expected_forms": ["govorim", "govori", "govorio", "govorila", "govoreći"],
+      "note": "Verb conjugation"
+    },
+    {
+      "base_word": "veliki",
+      "expected_forms": ["velika", "veliko", "velikog", "velikoj", "veći"],
+      "note": "Adjective declension + comparative"
+    },
+    {
+      "base_word": "znati",
+      "expected_forms": ["znam", "zna", "znao", "znala", "znajući", "saznati"],
+      "note": "Verb conjugation + aspect"
+    }
+  ]
+}

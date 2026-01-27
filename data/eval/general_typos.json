@@ -1,0 +1,21 @@
+{
+  "description": "General typos in Croatian - keyboard errors, letter swaps, duplications",
+  "weight": 0.33,
+  "test_pairs": [
+    {"incorrect": "prijateli", "correct": "prijatelj", "note": "Missing letter"},
+    {"incorrect": "doabr", "correct": "dobar", "note": "Transposed letters"},
+    {"incorrect": "skolaa", "correct": "škola", "note": "Duplicated letter + missing diacritic"},
+    {"incorrect": "pisatti", "correct": "pisati", "note": "Duplicated letter"},
+    {"incorrect": "raaditi", "correct": "raditi", "note": "Duplicated letter"},
+    {"incorrect": "govoritti", "correct": "govoriti", "note": "Duplicated letter"},
+    {"incorrect": "kuuca", "correct": "kuća", "note": "Duplicated letter + missing diacritic"},
+    {"incorrect": "automboil", "correct": "automobil", "note": "Transposed letters"},
+    {"incorrect": "kompjutr", "correct": "kompjuter", "note": "Missing letter"},
+    {"incorrect": "teleofn", "correct": "telefon", "note": "Transposed letters"},
+    {"incorrect": "porgram", "correct": "program", "note": "Transposed letters"},
+    {"incorrect": "problme", "correct": "problem", "note": "Transposed letters"},
+    {"incorrect": "vrijeme", "correct": "vrijeme", "note": "Correct - baseline"},
+    {"incorrect": "računlo", "correct": "računalo", "note": "Missing letter"},
+    {"incorrect": "potreba", "correct": "potreba", "note": "Correct - baseline"}
+  ]
+}
