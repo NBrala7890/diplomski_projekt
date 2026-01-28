@@ -91,10 +91,10 @@ Shows all model configurations and their completion status.
 
 ```bash
 # Train a specific model by name
-python scripts/train_optimized.py --name sg_d300_ws10_e5_mc2
+python scripts/train_optimized.py --name sg_d200_ws5_e3_mc2
 
 # Train by tier
-python scripts/train_optimized.py --tier 0          # Quick models (~5h each)
+python scripts/train_optimized.py --tier 0          # Quick models (~2h each)
 python scripts/train_optimized.py --tier 1          # Standard models (~11h each)
 python scripts/train_optimized.py --tier 2          # Experimental models
 
@@ -112,7 +112,7 @@ python scripts/train_optimized.py --all
 python scripts/evaluate_model.py --all-models
 
 # Evaluate specific model
-python scripts/evaluate_model.py --model models/ft_sg_d300_ws10_e5_mc2.bin
+python scripts/evaluate_model.py --model models/ft_sg_d200_ws5_e3_mc2.bin
 
 # Compare with Facebook baseline
 bash scripts/download_baseline.sh
@@ -127,15 +127,15 @@ python scripts/compare_models.py
 
 ## Model Configurations
 
-### Tier 0: Quick (~5 hours each)
-Reduced epochs for faster iteration.
+### Tier 0: Quick (~2 hours each)
+Fast iteration with reduced dimensions and epochs.
 
 | Model Name | dim | ws | epoch | Notes |
 |------------|-----|-----|-------|-------|
-| sg_d300_ws10_e5_mc2 | 300 | 10 | 5 | Baseline quick |
-| sg_d200_ws10_e5_mc2 | 200 | 10 | 5 | Smaller dimension |
-| sg_d300_ws5_e5_mc2 | 300 | 5 | 5 | Smaller window |
-| cbow_d300_ws10_e5_mc2 | 300 | 10 | 5 | CBOW variant |
+| sg_d200_ws5_e3_mc2 | 200 | 5 | 3 | Balanced quick |
+| sg_d100_ws5_e3_mc2 | 100 | 5 | 3 | Smallest, fastest |
+| sg_d200_ws10_e3_mc2 | 200 | 10 | 3 | Larger window |
+| cbow_d200_ws5_e3_mc2 | 200 | 5 | 3 | CBOW variant |
 
 ### Tier 1: Standard (~11 hours each)
 Full training based on Seminar 2 findings.
