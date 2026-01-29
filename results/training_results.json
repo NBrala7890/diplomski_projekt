@@ -1,0 +1,59 @@
+[
+  {
+    "name": "sg_d200_ws5_e3_mc2",
+    "status": "success",
+    "model_path": "/home/teom/uni/d-projekt/diplomski_projekt/models/ft_sg_d200_ws5_e3_mc2.bin",
+    "training_time_seconds": 4838.7203686237335,
+    "training_time_minutes": 80.64533947706222,
+    "vocab_size": 2918267,
+    "config": {
+      "name": "sg_d200_ws5_e3_mc2",
+      "model": "skipgram",
+      "dim": 200,
+      "ws": 5,
+      "epoch": 3,
+      "minCount": 2,
+      "minn": 3,
+      "maxn": 6
+    },
+    "timestamp": "2026-01-28T13:02:52.763815"
+  },
+  {
+    "name": "cbow_d200_ws5_e3_mc2",
+    "status": "success",
+    "model_path": "/home/teom/uni/d-projekt/diplomski_projekt/models/ft_cbow_d200_ws5_e3_mc2.bin",
+    "training_time_seconds": 3097.50603723526,
+    "training_time_minutes": 51.625100620587666,
+    "vocab_size": 2918267,
+    "config": {
+      "name": "cbow_d200_ws5_e3_mc2",
+      "model": "cbow",
+      "dim": 200,
+      "ws": 5,
+      "epoch": 3,
+      "minCount": 2,
+      "minn": 3,
+      "maxn": 6
+    },
+    "timestamp": "2026-01-28T15:28:39.245985"
+  },
+  {
+    "name": "sg_d300_ws10_e10_mc2",
+    "status": "success",
+    "model_path": "/home/teom/uni/d-projekt/diplomski_projekt/models/ft_sg_d300_ws10_e10_mc2.bin",
+    "training_time_seconds": 35754.687963724136,
+    "training_time_minutes": 595.9114660620689,
+    "vocab_size": 2918267,
+    "config": {
+      "name": "sg_d300_ws10_e10_mc2",
+      "model": "skipgram",
+      "dim": 300,
+      "ws": 10,
+      "epoch": 10,
+      "minCount": 2,
+      "minn": 3,
+      "maxn": 6
+    },
+    "timestamp": "2026-01-29T02:44:34.877511"
+  }
+]
