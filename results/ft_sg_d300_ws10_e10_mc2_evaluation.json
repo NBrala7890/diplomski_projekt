@@ -1,0 +1,557 @@
+[
+  {
+    "model": "ft_sg_d300_ws10_e10_mc2",
+    "model_path": "models/ft_sg_d300_ws10_e10_mc2.bin",
+    "status": "success",
+    "ije_je_errors": {
+      "mrr": 0.05,
+      "recall_at_10": 0.1,
+      "total_pairs": 10,
+      "found_in_top_k": 1,
+      "details": [
+        {
+          "incorrect": "riješenje",
+          "correct": "rješenje",
+          "rank": 2,
+          "top_suggestions": [
+            "riješenje,",
+            "rješenje",
+            "riješenje.",
+            "riješenje\"",
+            "rješenje,"
+          ]
+        },
+        {
+          "incorrect": "mlieko",
+          "correct": "mlijeko",
+          "rank": null,
+          "top_suggestions": [
+            "mlieka",
+            "slanić",
+            "pekorino",
+            "proseno",
+            "mlinčić"
+          ]
+        },
+        {
+          "incorrect": "vriemena",
+          "correct": "vremena",
+          "rank": null,
+          "top_suggestions": [
+            "vriemena,",
+            "vrieme",
+            "riemera",
+            "Riemena",
+            "Vrieme"
+          ]
+        },
+        {
+          "incorrect": "biel",
+          "correct": "bijel",
+          "rank": null,
+          "top_suggestions": [
+            "biele",
+            "bier",
+            "bielse",
+            "bielsa",
+            "viel"
+          ]
+        },
+        {
+          "incorrect": "diel",
+          "correct": "dio",
+          "rank": null,
+          "top_suggestions": [
+            "Adiel",
+            "dielu",
+            "josiel",
+            "piel",
+            "dieter"
+          ]
+        },
+        {
+          "incorrect": "tielo",
+          "correct": "tijelo",
+          "rank": null,
+          "top_suggestions": [
+            "tielo,",
+            "Vittielo",
+            "tielesnu",
+            "tjielo",
+            "cielo"
+          ]
+        },
+        {
+          "incorrect": "grieh",
+          "correct": "grijeh",
+          "rank": null,
+          "top_suggestions": [
+            "grier",
+            "jounieh",
+            "gries",
+            "siehe",
+            "köhna"
+          ]
+        },
+        {
+          "incorrect": "sniega",
+          "correct": "snijega",
+          "rank": null,
+          "top_suggestions": [
+            "Paniega",
+            "spiega",
+            "fróna",
+            "dillona",
+            "winogrodzki"
+          ]
+        },
+        {
+          "incorrect": "liek",
+          "correct": "lijek",
+          "rank": null,
+          "top_suggestions": [
+            "sliek",
+            "niek",
+            "veliek",
+            "priliek",
+            "lieto"
+          ]
+        },
+        {
+          "incorrect": "ciena",
+          "correct": "cijena",
+          "rank": null,
+          "top_suggestions": [
+            "luciena",
+            "iena",
+            "siena",
+            "tiena",
+            "ciiena"
+          ]
+        }
+      ]
+    },
+    "ije_je_hybrid": {
+      "mean_hybrid_score": 0.727279007434845,
+      "total_pairs": 10,
+      "details": [
+        {
+          "incorrect": "riješenje",
+          "correct": "rješenje",
+          "hybrid_score": 0.923936128616333
+        },
+        {
+          "incorrect": "mlieko",
+          "correct": "mlijeko",
+          "hybrid_score": 0.8047640323638916
+        },
+        {
+          "incorrect": "vriemena",
+          "correct": "vremena",
+          "hybrid_score": 0.775183379650116
+        },
+        {
+          "incorrect": "biel",
+          "correct": "bijel",
+          "hybrid_score": 0.7064435482025146
+        },
+        {
+          "incorrect": "diel",
+          "correct": "dio",
+          "hybrid_score": 0.5317820310592651
+        },
+        {
+          "incorrect": "tielo",
+          "correct": "tijelo",
+          "hybrid_score": 0.745837390422821
+        },
+        {
+          "incorrect": "grieh",
+          "correct": "grijeh",
+          "hybrid_score": 0.7085219621658325
+        },
+        {
+          "incorrect": "sniega",
+          "correct": "snijega",
+          "hybrid_score": 0.7457442283630371
+        },
+        {
+          "incorrect": "liek",
+          "correct": "lijek",
+          "hybrid_score": 0.6556605100631714
+        },
+        {
+          "incorrect": "ciena",
+          "correct": "cijena",
+          "hybrid_score": 0.674916684627533
+        }
+      ]
+    },
+    "diacritic_errors": {
+      "mean_score": 0.8091764450073242,
+      "reachable_ratio": 0.3,
+      "total_pairs": 10,
+      "details": [
+        {
+          "incorrect": "moč",
+          "correct": "moć",
+          "variants_generated": [
+            "moć",
+            "moč"
+          ],
+          "can_reach_correct": true,
+          "score": 0.8659043312072754
+        },
+        {
+          "incorrect": "noč",
+          "correct": "noć",
+          "variants_generated": [
+            "noč",
+            "noć"
+          ],
+          "can_reach_correct": true,
+          "score": 0.8808645009994507
+        },
+        {
+          "incorrect": "kuča",
+          "correct": "kuća",
+          "variants_generated": [
+            "kuća",
+            "kuča"
+          ],
+          "can_reach_correct": true,
+          "score": 0.9097647070884705
+        },
+        {
+          "incorrect": "sreca",
+          "correct": "sreća",
+          "variants_generated": [
+            "sreca"
+          ],
+          "can_reach_correct": false,
+          "score": 0.7561652064323425
+        },
+        {
+          "incorrect": "zivot",
+          "correct": "život",
+          "variants_generated": [
+            "zivot"
+          ],
+          "can_reach_correct": false,
+          "score": 0.7907963991165161
+        },
+        {
+          "incorrect": "covjek",
+          "correct": "čovjek",
+          "variants_generated": [
+            "covjek"
+          ],
+          "can_reach_correct": false,
+          "score": 0.7843436002731323
+        },
+        {
+          "incorrect": "skola",
+          "correct": "škola",
+          "variants_generated": [
+            "skola"
+          ],
+          "can_reach_correct": false,
+          "score": 0.7846327424049377
+        },
+        {
+          "incorrect": "zelim",
+          "correct": "želim",
+          "variants_generated": [
+            "zelim"
+          ],
+          "can_reach_correct": false,
+          "score": 0.8025057315826416
+        },
+        {
+          "incorrect": "rucak",
+          "correct": "ručak",
+          "variants_generated": [
+            "rucak"
+          ],
+          "can_reach_correct": false,
+          "score": 0.7739430665969849
+        },
+        {
+          "incorrect": "poceti",
+          "correct": "početi",
+          "variants_generated": [
+            "poceti"
+          ],
+          "can_reach_correct": false,
+          "score": 0.7428441643714905
+        }
+      ]
+    },
+    "general_typos": {
+      "mean_hybrid_score": 0.7720116972923279,
+      "total_pairs": 10,
+      "details": [
+        {
+          "incorrect": "prijateli",
+          "correct": "prijatelj",
+          "hybrid_score": 0.8566204309463501
+        },
+        {
+          "incorrect": "doabr",
+          "correct": "dobar",
+          "hybrid_score": 0.6543239951133728
+        },
+        {
+          "incorrect": "skolaa",
+          "correct": "škola",
+          "hybrid_score": 0.6952216625213623
+        },
+        {
+          "incorrect": "pisatti",
+          "correct": "pisati",
+          "hybrid_score": 0.8316344022750854
+        },
+        {
+          "incorrect": "raaditi",
+          "correct": "raditi",
+          "hybrid_score": 0.7866374254226685
+        },
+        {
+          "incorrect": "govoritti",
+          "correct": "govoriti",
+          "hybrid_score": 0.8674997091293335
+        },
+        {
+          "incorrect": "kuuca",
+          "correct": "kuća",
+          "hybrid_score": 0.6115654110908508
+        },
+        {
+          "incorrect": "automboil",
+          "correct": "automobil",
+          "hybrid_score": 0.7967926263809204
+        },
+        {
+          "incorrect": "kompjutr",
+          "correct": "kompjuter",
+          "hybrid_score": 0.8953473567962646
+        },
+        {
+          "incorrect": "teleofn",
+          "correct": "telefon",
+          "hybrid_score": 0.724474310874939
+        }
+      ]
+    },
+    "semantic_similarity": {
+      "mean_predicted_similarity": 0.6436687111854553,
+      "correlation_with_expected": 0.12605231683541643,
+      "total_pairs": 10,
+      "evaluated_pairs": 10,
+      "details": [
+        {
+          "word1": "škola",
+          "word2": "učenik",
+          "predicted_similarity": 0.6928691864013672,
+          "expected_similarity": 0.6
+        },
+        {
+          "word1": "škola",
+          "word2": "obrazovanje",
+          "predicted_similarity": 0.6257206201553345,
+          "expected_similarity": 0.65
+        },
+        {
+          "word1": "pisati",
+          "word2": "čitati",
+          "predicted_similarity": 0.8253862857818604,
+          "expected_similarity": 0.5
+        },
+        {
+          "word1": "auto",
+          "word2": "vozilo",
+          "predicted_similarity": 0.6926032900810242,
+          "expected_similarity": 0.7
+        },
+        {
+          "word1": "kuća",
+          "word2": "stan",
+          "predicted_similarity": 0.5099136233329773,
+          "expected_similarity": 0.6
+        },
+        {
+          "word1": "liječnik",
+          "word2": "bolnica",
+          "predicted_similarity": 0.5635777711868286,
+          "expected_similarity": 0.55
+        },
+        {
+          "word1": "učitelj",
+          "word2": "učenik",
+          "predicted_similarity": 0.7398790717124939,
+          "expected_similarity": 0.6
+        },
+        {
+          "word1": "knjiga",
+          "word2": "čitanje",
+          "predicted_similarity": 0.6061685085296631,
+          "expected_similarity": 0.5
+        },
+        {
+          "word1": "more",
+          "word2": "plaža",
+          "predicted_similarity": 0.6291683912277222,
+          "expected_similarity": 0.55
+        },
+        {
+          "word1": "grad",
+          "word2": "selo",
+          "predicted_similarity": 0.5514002442359924,
+          "expected_similarity": 0.45
+        }
+      ]
+    },
+    "morphological_coverage": {
+      "mean_coverage": 0.31333333333333335,
+      "total_base_words": 5,
+      "details": [
+        {
+          "base_word": "učitelj",
+          "expected_forms": [
+            "učitelja",
+            "učitelju",
+            "učitelje",
+            "učitelji",
+            "učiteljica"
+          ],
+          "found_forms": [
+            "učitelja",
+            "učitelju"
+          ],
+          "coverage": 0.4,
+          "top_neighbors": [
+            "učitelj,",
+            "učitelj.",
+            "naučitelj",
+            "Učitelj",
+            "nastavnik",
+            "učiteljâ",
+            "učiteljev",
+            "učitelj-učenik",
+            "učiteljski",
+            "učitelj.Ovo"
+          ]
+        },
+        {
+          "base_word": "pisati",
+          "expected_forms": [
+            "pišem",
+            "piše",
+            "pisao",
+            "pisala",
+            "pišući",
+            "napisati"
+          ],
+          "found_forms": [
+            "napisati"
+          ],
+          "coverage": 0.16666666666666666,
+          "top_neighbors": [
+            "pisati,",
+            "čitati",
+            "pisati.",
+            "napisati",
+            "napisati,",
+            "pisati\"",
+            "pisati;",
+            "čitatiti",
+            "napisati.",
+            "čitati,"
+          ]
+        },
+        {
+          "base_word": "lijep",
+          "expected_forms": [
+            "lijepa",
+            "lijepo",
+            "lijepog",
+            "lijepoj",
+            "ljepši"
+          ],
+          "found_forms": [
+            "lijepo"
+          ],
+          "coverage": 0.2,
+          "top_neighbors": [
+            "lijep,",
+            "prekrasan",
+            "lijepi",
+            "prelijep",
+            "predivan",
+            "ugodan",
+            "prekrasan,",
+            "divan",
+            "Lijep",
+            "Prekrasan"
+          ]
+        },
+        {
+          "base_word": "kuća",
+          "expected_forms": [
+            "kuće",
+            "kući",
+            "kuću",
+            "kućom",
+            "kuće"
+          ],
+          "found_forms": [
+            "kuće",
+            "kuću",
+            "kuće"
+          ],
+          "coverage": 0.6,
+          "top_neighbors": [
+            "kuća,",
+            "kuća.",
+            "kuće",
+            "kuću",
+            "Kuća",
+            "vila",
+            "kućama",
+            "kuća/vikendica",
+            "kućah",
+            "kuće,"
+          ]
+        },
+        {
+          "base_word": "raditi",
+          "expected_forms": [
+            "radim",
+            "radi",
+            "radio",
+            "radila",
+            "radeći"
+          ],
+          "found_forms": [
+            "radim"
+          ],
+          "coverage": 0.2,
+          "top_neighbors": [
+            "raditi,",
+            "radititi",
+            "raditi.",
+            "raditit",
+            "radit",
+            "nastavljati",
+            "početi",
+            "nastaviti",
+            "raditi\"",
+            "raditi.\"Nakon"
+          ]
+        }
+      ]
+    },
+    "old_overall_score": 0.24617408310810376,
+    "overall_score": 0.4947170698669784
+  }
+]

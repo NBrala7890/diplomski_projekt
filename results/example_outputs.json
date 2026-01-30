@@ -1,0 +1,3818 @@
+[
+  {
+    "model": "ft_sg_d300_ws10_e15_mc2.bin",
+    "short_name": "SG-300-E15",
+    "neighbors": {
+      "škola": [
+        [
+          "škola,",
+          0.8595
+        ],
+        [
+          "škole",
+          0.8431
+        ],
+        [
+          "škola.",
+          0.8272
+        ],
+        [
+          "učenika",
+          0.8035
+        ],
+        [
+          "škol",
+          0.7844
+        ],
+        [
+          "učenike",
+          0.782
+        ],
+        [
+          "učenici",
+          0.7604
+        ],
+        [
+          "učenika,",
+          0.7592
+        ],
+        [
+          "gimnazija",
+          0.7571
+        ],
+        [
+          "nastava",
+          0.7515
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati,",
+          0.8378
+        ],
+        [
+          "čitati",
+          0.7928
+        ],
+        [
+          "pisati.",
+          0.7879
+        ],
+        [
+          "napisati",
+          0.7647
+        ],
+        [
+          "pisati\"",
+          0.7382
+        ],
+        [
+          "napisati,",
+          0.7146
+        ],
+        [
+          "čitati,",
+          0.7103
+        ],
+        [
+          "čitati.",
+          0.7051
+        ],
+        [
+          "čitatiti",
+          0.6982
+        ],
+        [
+          "Napisati",
+          0.6906
+        ]
+      ],
+      "trezor": [
+        [
+          "trezor,",
+          0.8264
+        ],
+        [
+          "trezorom",
+          0.7883
+        ],
+        [
+          "trezori",
+          0.7862
+        ],
+        [
+          "trezor.",
+          0.7782
+        ],
+        [
+          "trezore",
+          0.7754
+        ],
+        [
+          "trezore.",
+          0.7726
+        ],
+        [
+          "trezori.",
+          0.7674
+        ],
+        [
+          "trezor\"",
+          0.7513
+        ],
+        [
+          "trezoru.",
+          0.7429
+        ],
+        [
+          "trezorist",
+          0.7401
+        ]
+      ],
+      "moć": [
+        [
+          "moć,",
+          0.7644
+        ],
+        [
+          "moć.",
+          0.7418
+        ],
+        [
+          "sposobnost",
+          0.6229
+        ],
+        [
+          "superiornost",
+          0.6209
+        ],
+        [
+          "superiornost,",
+          0.6176
+        ],
+        [
+          "superiornost.",
+          0.6089
+        ],
+        [
+          "svemoć",
+          0.5927
+        ],
+        [
+          "moć?",
+          0.5865
+        ],
+        [
+          "nejedinstvenost",
+          0.5779
+        ],
+        [
+          "svemoć,",
+          0.5753
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,",
+          0.8525
+        ],
+        [
+          "kuća.",
+          0.7738
+        ],
+        [
+          "kuće",
+          0.7266
+        ],
+        [
+          "Kuća",
+          0.7082
+        ],
+        [
+          "kuću",
+          0.6923
+        ],
+        [
+          "vila",
+          0.6589
+        ],
+        [
+          "kućama",
+          0.6242
+        ],
+        [
+          "kuća:",
+          0.6115
+        ],
+        [
+          "kuće,",
+          0.6101
+        ],
+        [
+          "kuća.\"",
+          0.6083
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje,",
+            0.8796
+          ],
+          [
+            "rješenje",
+            0.8606
+          ],
+          [
+            "riješenje.",
+            0.858
+          ],
+          [
+            "riješenje\"",
+            0.814
+          ],
+          [
+            "riješenjem",
+            0.7964
+          ],
+          [
+            "rješenje,",
+            0.7929
+          ],
+          [
+            "Riješenje",
+            0.7806
+          ],
+          [
+            "riješenje-",
+            0.7694
+          ],
+          [
+            "rješenje.U",
+            0.75
+          ],
+          [
+            "riješenje:",
+            0.7411
+          ]
+        ],
+        "rank": 2,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "moč,",
+            0.562
+          ],
+          [
+            "močna",
+            0.5348
+          ],
+          [
+            "pomoč",
+            0.5141
+          ],
+          [
+            "močnika",
+            0.5111
+          ],
+          [
+            "močnejša",
+            0.5033
+          ],
+          [
+            "močnih",
+            0.5006
+          ],
+          [
+            "nadmoč",
+            0.4934
+          ],
+          [
+            "moči,",
+            0.493
+          ],
+          [
+            "močni",
+            0.4925
+          ],
+          [
+            "močno.",
+            0.4824
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatelima",
+            0.8921
+          ],
+          [
+            "prijatel",
+            0.8716
+          ],
+          [
+            "prijatel,",
+            0.7889
+          ],
+          [
+            "prijatel\"",
+            0.783
+          ],
+          [
+            "prijatelčj",
+            0.7599
+          ],
+          [
+            "prijateljii",
+            0.7409
+          ],
+          [
+            "prijatelej",
+            0.7186
+          ],
+          [
+            "prijatej",
+            0.7114
+          ],
+          [
+            "prijateljiam",
+            0.7067
+          ],
+          [
+            "prijatelj;",
+            0.7045
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.6854,
+      "škola-obrazovanje": 0.5802,
+      "auto-vozilo": 0.6789,
+      "kuća-stan": 0.4647,
+      "pisati-čitati": 0.7928,
+      "lijep-ružan": 0.4803,
+      "škola-banana": 0.1406
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princeza",
+            0.8286
+          ],
+          [
+            "vojvotkinj",
+            0.8122
+          ],
+          [
+            "princa",
+            0.7914
+          ]
+        ],
+        "top_word": "princeza"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Parizu",
+            0.5508
+          ],
+          [
+            "Pariza",
+            0.51
+          ],
+          [
+            "Parizu,",
+            0.5003
+          ]
+        ],
+        "top_word": "Parizu"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječaka",
+            0.6316
+          ],
+          [
+            "dječa",
+            0.5277
+          ],
+          [
+            "dječak,",
+            0.5245
+          ]
+        ],
+        "top_word": "dječaka"
+      }
+    }
+  },
+  {
+    "model": "ft_sg_d300_ws10_e10_mc2.bin",
+    "short_name": "SG-300-E10",
+    "neighbors": {
+      "škola": [
+        [
+          "škola,",
+          0.8783
+        ],
+        [
+          "škole",
+          0.8463
+        ],
+        [
+          "škola.",
+          0.8398
+        ],
+        [
+          "učenika",
+          0.816
+        ],
+        [
+          "učenike",
+          0.7914
+        ],
+        [
+          "škol",
+          0.7887
+        ],
+        [
+          "učenika,",
+          0.7874
+        ],
+        [
+          "učionica",
+          0.7761
+        ],
+        [
+          "nastava",
+          0.7726
+        ],
+        [
+          "učenici",
+          0.7681
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati,",
+          0.8634
+        ],
+        [
+          "čitati",
+          0.8254
+        ],
+        [
+          "pisati.",
+          0.8164
+        ],
+        [
+          "napisati",
+          0.8005
+        ],
+        [
+          "napisati,",
+          0.7714
+        ],
+        [
+          "pisati\"",
+          0.7686
+        ],
+        [
+          "pisati;",
+          0.7501
+        ],
+        [
+          "čitatiti",
+          0.745
+        ],
+        [
+          "napisati.",
+          0.7417
+        ],
+        [
+          "čitati,",
+          0.7412
+        ]
+      ],
+      "trezor": [
+        [
+          "trezor,",
+          0.8331
+        ],
+        [
+          "trezorom",
+          0.8259
+        ],
+        [
+          "trezori",
+          0.8185
+        ],
+        [
+          "trezor\"",
+          0.8138
+        ],
+        [
+          "trezore",
+          0.81
+        ],
+        [
+          "trezor.",
+          0.7937
+        ],
+        [
+          "trezore.",
+          0.7935
+        ],
+        [
+          "trezoru",
+          0.7895
+        ],
+        [
+          "trezori.",
+          0.787
+        ],
+        [
+          "trezorima",
+          0.7835
+        ]
+      ],
+      "moć": [
+        [
+          "moć.",
+          0.7748
+        ],
+        [
+          "moć,",
+          0.7667
+        ],
+        [
+          "sposobnost",
+          0.6896
+        ],
+        [
+          "nedodirljivost",
+          0.6489
+        ],
+        [
+          "superiornost",
+          0.6443
+        ],
+        [
+          "superiornost,",
+          0.6426
+        ],
+        [
+          "nedodirljivost,",
+          0.64
+        ],
+        [
+          "odlučnost",
+          0.6342
+        ],
+        [
+          "moći,",
+          0.6329
+        ],
+        [
+          "nezaustavljivost",
+          0.6317
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,",
+          0.8687
+        ],
+        [
+          "kuća.",
+          0.8001
+        ],
+        [
+          "kuće",
+          0.7624
+        ],
+        [
+          "kuću",
+          0.7061
+        ],
+        [
+          "Kuća",
+          0.7026
+        ],
+        [
+          "vila",
+          0.7025
+        ],
+        [
+          "kućama",
+          0.6674
+        ],
+        [
+          "kuća/vikendica",
+          0.6557
+        ],
+        [
+          "kućah",
+          0.6481
+        ],
+        [
+          "kuće,",
+          0.6444
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje,",
+            0.9006
+          ],
+          [
+            "rješenje",
+            0.8946
+          ],
+          [
+            "riješenje.",
+            0.8807
+          ],
+          [
+            "riješenje\"",
+            0.8344
+          ],
+          [
+            "rješenje,",
+            0.8328
+          ],
+          [
+            "riješenjem",
+            0.8325
+          ],
+          [
+            "Riješenje",
+            0.8295
+          ],
+          [
+            "riješenje-",
+            0.8266
+          ],
+          [
+            "ješenje",
+            0.7962
+          ],
+          [
+            "riješenja",
+            0.7887
+          ]
+        ],
+        "rank": 2,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "moč,",
+            0.6427
+          ],
+          [
+            "nadmoč",
+            0.5385
+          ],
+          [
+            "močna",
+            0.5312
+          ],
+          [
+            "močić",
+            0.5205
+          ],
+          [
+            "močno",
+            0.5139
+          ],
+          [
+            "moči,",
+            0.5107
+          ],
+          [
+            "močnika",
+            0.5094
+          ],
+          [
+            "močnih",
+            0.5033
+          ],
+          [
+            "pomoč",
+            0.4991
+          ],
+          [
+            "močnija",
+            0.4989
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatelima",
+            0.9107
+          ],
+          [
+            "prijatel",
+            0.9047
+          ],
+          [
+            "prijatel,",
+            0.8495
+          ],
+          [
+            "prijatelčj",
+            0.8286
+          ],
+          [
+            "prijatel\"",
+            0.8282
+          ],
+          [
+            "prijateljii",
+            0.8133
+          ],
+          [
+            "prijateljiam",
+            0.8042
+          ],
+          [
+            "prijatelej",
+            0.8039
+          ],
+          [
+            "prijateljia,",
+            0.7914
+          ],
+          [
+            "prijatelji.Sve",
+            0.7899
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.6929,
+      "škola-obrazovanje": 0.6257,
+      "auto-vozilo": 0.6926,
+      "kuća-stan": 0.5099,
+      "pisati-čitati": 0.8254,
+      "lijep-ružan": 0.5296,
+      "škola-banana": 0.187
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princeza",
+            0.8281
+          ],
+          [
+            "vojvotkinj",
+            0.8206
+          ],
+          [
+            "princa",
+            0.8109
+          ]
+        ],
+        "top_word": "princeza"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Parizu",
+            0.5825
+          ],
+          [
+            "Pariz,",
+            0.5629
+          ],
+          [
+            "Parizu,",
+            0.5478
+          ]
+        ],
+        "top_word": "Parizu"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječaka",
+            0.6853
+          ],
+          [
+            "dječa",
+            0.5819
+          ],
+          [
+            "dječak,",
+            0.5528
+          ]
+        ],
+        "top_word": "dječaka"
+      }
+    }
+  },
+  {
+    "model": "ft_cbow_d300_ws10_e10_mc2.bin",
+    "short_name": "CB-300",
+    "neighbors": {
+      "škola": [
+        [
+          "-škola",
+          0.9283
+        ],
+        [
+          "škola,",
+          0.9149
+        ],
+        [
+          "E-škola",
+          0.9131
+        ],
+        [
+          "'škola",
+          0.9094
+        ],
+        [
+          "škola,od",
+          0.9033
+        ],
+        [
+          "škola,.",
+          0.8996
+        ],
+        [
+          "eškola",
+          0.8972
+        ],
+        [
+          "aškola",
+          0.8961
+        ],
+        [
+          "škola''",
+          0.8922
+        ],
+        [
+          "škola,doma",
+          0.891
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati,",
+          0.9132
+        ],
+        [
+          "pisati;",
+          0.908
+        ],
+        [
+          "napisati",
+          0.8984
+        ],
+        [
+          "pisati-",
+          0.8981
+        ],
+        [
+          "čitati",
+          0.8796
+        ],
+        [
+          "rapisati",
+          0.8693
+        ],
+        [
+          "raditi/pisati",
+          0.8672
+        ],
+        [
+          "čitatiti",
+          0.866
+        ],
+        [
+          "pisati:",
+          0.8643
+        ],
+        [
+          "pisati'",
+          0.8578
+        ]
+      ],
+      "trezor": [
+        [
+          "trezor,",
+          0.9412
+        ],
+        [
+          "trezorce",
+          0.8531
+        ],
+        [
+          "trezore",
+          0.8421
+        ],
+        [
+          "trezor?",
+          0.8366
+        ],
+        [
+          "trezora",
+          0.8337
+        ],
+        [
+          "trezor\"",
+          0.8318
+        ],
+        [
+          "trezori",
+          0.821
+        ],
+        [
+          "trezorca",
+          0.8175
+        ],
+        [
+          "trezoru",
+          0.816
+        ],
+        [
+          "trezors.png",
+          0.8095
+        ]
+      ],
+      "moć": [
+        [
+          "moć,",
+          0.8517
+        ],
+        [
+          "moć-",
+          0.849
+        ],
+        [
+          "moć;",
+          0.8444
+        ],
+        [
+          "moćda",
+          0.8289
+        ],
+        [
+          "pmoć",
+          0.8208
+        ],
+        [
+          "opmoć",
+          0.8193
+        ],
+        [
+          "moć'",
+          0.8187
+        ],
+        [
+          "moćo",
+          0.8124
+        ],
+        [
+          "moćže",
+          0.8083
+        ],
+        [
+          "moćoi",
+          0.8059
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,na",
+          0.9028
+        ],
+        [
+          "kuća,",
+          0.8825
+        ],
+        [
+          "kuća!-",
+          0.8792
+        ],
+        [
+          "kuća-",
+          0.8763
+        ],
+        [
+          "kuća\"\"",
+          0.8646
+        ],
+        [
+          "kućah",
+          0.8621
+        ],
+        [
+          "kuća')",
+          0.858
+        ],
+        [
+          "kuća;",
+          0.8548
+        ],
+        [
+          "kuća-koliba",
+          0.8355
+        ],
+        [
+          "tvkuća",
+          0.8185
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje,",
+            0.9593
+          ],
+          [
+            "riješenje-",
+            0.9482
+          ],
+          [
+            "riješenje;",
+            0.9439
+          ],
+          [
+            "rješenje",
+            0.9316
+          ],
+          [
+            "razriješenje",
+            0.929
+          ],
+          [
+            "'rješenje",
+            0.9271
+          ],
+          [
+            "među-rješenje",
+            0.9192
+          ],
+          [
+            "(rješenje",
+            0.9116
+          ],
+          [
+            "polurješenje",
+            0.9049
+          ],
+          [
+            "instantrješenje",
+            0.9005
+          ]
+        ],
+        "rank": 4,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "močo",
+            0.8089
+          ],
+          [
+            "moč,",
+            0.7374
+          ],
+          [
+            "močibob",
+            0.6557
+          ],
+          [
+            "moûe",
+            0.6358
+          ],
+          [
+            "močad",
+            0.6051
+          ],
+          [
+            "močo,",
+            0.6045
+          ],
+          [
+            "moÄ",
+            0.5966
+          ],
+          [
+            "močić",
+            0.5951
+          ],
+          [
+            "moZe",
+            0.5874
+          ],
+          [
+            "moče",
+            0.5865
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatelčj",
+            0.9279
+          ],
+          [
+            "prijatel",
+            0.8975
+          ],
+          [
+            "prijateljii",
+            0.8949
+          ],
+          [
+            "prijateji",
+            0.8895
+          ],
+          [
+            "prijatelej",
+            0.889
+          ],
+          [
+            "prijatelj;",
+            0.8877
+          ],
+          [
+            "prijatelji;",
+            0.886
+          ],
+          [
+            "prijatel,",
+            0.8793
+          ],
+          [
+            "prijateljma",
+            0.8782
+          ],
+          [
+            "prijateljia,",
+            0.8781
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.5198,
+      "škola-obrazovanje": 0.4925,
+      "auto-vozilo": 0.6279,
+      "kuća-stan": 0.3498,
+      "pisati-čitati": 0.8796,
+      "lijep-ružan": 0.501,
+      "škola-banana": 0.2598
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princca",
+            0.7195
+          ],
+          [
+            "princze",
+            0.7184
+          ],
+          [
+            "princ'",
+            0.7085
+          ]
+        ],
+        "top_word": "princca"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Pariz-Kabal-Pariz",
+            0.6179
+          ],
+          [
+            "Pariz'",
+            0.6175
+          ],
+          [
+            "Pariz-Brest-Pariz",
+            0.616
+          ]
+        ],
+        "top_word": "Pariz-Kabal-Pariz"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječa",
+            0.5957
+          ],
+          [
+            "dječake*",
+            0.5863
+          ],
+          [
+            "dječak;",
+            0.5573
+          ]
+        ],
+        "top_word": "dječa"
+      }
+    }
+  },
+  {
+    "model": "ft_sg_d200_ws10_e3_mc2.bin",
+    "short_name": "SG-200-W10",
+    "neighbors": {
+      "škola": [
+        [
+          "škola,",
+          0.895
+        ],
+        [
+          "škola,od",
+          0.8678
+        ],
+        [
+          "škole",
+          0.866
+        ],
+        [
+          "-škola",
+          0.862
+        ],
+        [
+          "škola.",
+          0.8555
+        ],
+        [
+          "učenička",
+          0.8385
+        ],
+        [
+          "eškola",
+          0.8317
+        ],
+        [
+          "škol",
+          0.8233
+        ],
+        [
+          "škola;",
+          0.8181
+        ],
+        [
+          "školam",
+          0.8097
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati,",
+          0.8955
+        ],
+        [
+          "pisati\"",
+          0.8639
+        ],
+        [
+          "pisati.",
+          0.8406
+        ],
+        [
+          "čitati",
+          0.8367
+        ],
+        [
+          "pisati;",
+          0.8164
+        ],
+        [
+          "napisati",
+          0.8126
+        ],
+        [
+          "napisati,",
+          0.8031
+        ],
+        [
+          "čitatiti",
+          0.7976
+        ],
+        [
+          "čitati,",
+          0.7955
+        ],
+        [
+          "Pisati",
+          0.7858
+        ]
+      ],
+      "trezor": [
+        [
+          "trezore",
+          0.9197
+        ],
+        [
+          "trezor,",
+          0.9175
+        ],
+        [
+          "trezor.",
+          0.9007
+        ],
+        [
+          "trezori",
+          0.8997
+        ],
+        [
+          "trezora",
+          0.8962
+        ],
+        [
+          "trezoru",
+          0.8877
+        ],
+        [
+          "trezore.",
+          0.881
+        ],
+        [
+          "trezorima",
+          0.8648
+        ],
+        [
+          "trezora,",
+          0.8596
+        ],
+        [
+          "trezorce",
+          0.8531
+        ]
+      ],
+      "moć": [
+        [
+          "moć,",
+          0.8077
+        ],
+        [
+          "moć.",
+          0.7737
+        ],
+        [
+          "superiornost,",
+          0.7269
+        ],
+        [
+          "superiornost",
+          0.7209
+        ],
+        [
+          "uvjerenost",
+          0.7161
+        ],
+        [
+          "superiornost.",
+          0.7125
+        ],
+        [
+          "svemoć",
+          0.7113
+        ],
+        [
+          "neupitnost",
+          0.701
+        ],
+        [
+          "moća",
+          0.6951
+        ],
+        [
+          "nedodirljivost",
+          0.6948
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,",
+          0.8714
+        ],
+        [
+          "kuća.",
+          0.8068
+        ],
+        [
+          "kuća,na",
+          0.7826
+        ],
+        [
+          "kuće",
+          0.7673
+        ],
+        [
+          "kuća,Priča",
+          0.737
+        ],
+        [
+          "kuća.)",
+          0.7366
+        ],
+        [
+          "kućah",
+          0.7343
+        ],
+        [
+          "kućća",
+          0.732
+        ],
+        [
+          "Kuća",
+          0.7287
+        ],
+        [
+          "kuću",
+          0.7247
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje,",
+            0.9282
+          ],
+          [
+            "rješenje",
+            0.9083
+          ],
+          [
+            "riješenje.",
+            0.8989
+          ],
+          [
+            "riješenje-",
+            0.8883
+          ],
+          [
+            "Riješenje",
+            0.8678
+          ],
+          [
+            "riješenjem",
+            0.8615
+          ],
+          [
+            "rješenje.U",
+            0.8574
+          ],
+          [
+            "rješenje,",
+            0.851
+          ],
+          [
+            "riješenje;",
+            0.8476
+          ],
+          [
+            "'rješenje",
+            0.8461
+          ]
+        ],
+        "rank": 2,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "močić",
+            0.7338
+          ],
+          [
+            "moč,",
+            0.7145
+          ],
+          [
+            "moči",
+            0.7032
+          ],
+          [
+            "pomoč",
+            0.6532
+          ],
+          [
+            "močinić",
+            0.6448
+          ],
+          [
+            "močan",
+            0.6389
+          ],
+          [
+            "moče",
+            0.6349
+          ],
+          [
+            "albašir",
+            0.6263
+          ],
+          [
+            "putica",
+            0.6248
+          ],
+          [
+            "njemen",
+            0.6232
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatel",
+            0.9275
+          ],
+          [
+            "prijatelima",
+            0.9205
+          ],
+          [
+            "prijatelčj",
+            0.9065
+          ],
+          [
+            "prijatel,",
+            0.8794
+          ],
+          [
+            "prijateljia",
+            0.8576
+          ],
+          [
+            "prijateljiam",
+            0.8571
+          ],
+          [
+            "prijatelej",
+            0.8512
+          ],
+          [
+            "prijatel\"",
+            0.8483
+          ],
+          [
+            "prijateljii",
+            0.8354
+          ],
+          [
+            "prijateji",
+            0.8343
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.6635,
+      "škola-obrazovanje": 0.6931,
+      "auto-vozilo": 0.7129,
+      "kuća-stan": 0.4847,
+      "pisati-čitati": 0.8367,
+      "lijep-ružan": 0.6208,
+      "škola-banana": 0.0683
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princeza",
+            0.8852
+          ],
+          [
+            "princez",
+            0.8636
+          ],
+          [
+            "vojvotkinj",
+            0.8556
+          ]
+        ],
+        "top_word": "princeza"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Pariz)",
+            0.5999
+          ],
+          [
+            "Parizu;",
+            0.5915
+          ],
+          [
+            "Parizu",
+            0.5855
+          ]
+        ],
+        "top_word": "Pariz)"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječaka",
+            0.6955
+          ],
+          [
+            "dječa",
+            0.6662
+          ],
+          [
+            "dječak;",
+            0.6256
+          ]
+        ],
+        "top_word": "dječaka"
+      }
+    }
+  },
+  {
+    "model": "ft_sg_d200_ws5_e3_mc2.bin",
+    "short_name": "SG-200-W5",
+    "neighbors": {
+      "škola": [
+        [
+          "škola,od",
+          0.8816
+        ],
+        [
+          "-škola",
+          0.8726
+        ],
+        [
+          "škola,",
+          0.8548
+        ],
+        [
+          "eškola",
+          0.852
+        ],
+        [
+          "škola,doma",
+          0.8269
+        ],
+        [
+          "škole",
+          0.8223
+        ],
+        [
+          "škola.",
+          0.8145
+        ],
+        [
+          "škole/vrtića",
+          0.8024
+        ],
+        [
+          "E-škola",
+          0.8021
+        ],
+        [
+          "škola;",
+          0.8019
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati,",
+          0.861
+        ],
+        [
+          "pisati\"",
+          0.8525
+        ],
+        [
+          "čitati",
+          0.8155
+        ],
+        [
+          "napisati",
+          0.8151
+        ],
+        [
+          "pisati;",
+          0.8015
+        ],
+        [
+          "pisati.",
+          0.7935
+        ],
+        [
+          "Pisati",
+          0.7929
+        ],
+        [
+          "napisati,",
+          0.7765
+        ],
+        [
+          "pisato",
+          0.7718
+        ],
+        [
+          "čitatiti",
+          0.7699
+        ]
+      ],
+      "trezor": [
+        [
+          "trezor,",
+          0.9256
+        ],
+        [
+          "trezore",
+          0.9217
+        ],
+        [
+          "trezora",
+          0.915
+        ],
+        [
+          "trezori",
+          0.901
+        ],
+        [
+          "trezor.",
+          0.8938
+        ],
+        [
+          "trezoru",
+          0.8845
+        ],
+        [
+          "trezorce",
+          0.8796
+        ],
+        [
+          "trezor\"",
+          0.8784
+        ],
+        [
+          "trezorca",
+          0.8671
+        ],
+        [
+          "trezorci",
+          0.8665
+        ]
+      ],
+      "moć": [
+        [
+          "moć,",
+          0.7717
+        ],
+        [
+          "moć;",
+          0.7604
+        ],
+        [
+          "moć.",
+          0.7566
+        ],
+        [
+          "moć-",
+          0.7439
+        ],
+        [
+          "moćda",
+          0.7249
+        ],
+        [
+          "moćo",
+          0.7173
+        ],
+        [
+          "svemoć",
+          0.7041
+        ],
+        [
+          "moć'",
+          0.7038
+        ],
+        [
+          "sposobnost",
+          0.7017
+        ],
+        [
+          "superiornost",
+          0.6973
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,na",
+          0.8673
+        ],
+        [
+          "kuća,",
+          0.8526
+        ],
+        [
+          "kućah",
+          0.7894
+        ],
+        [
+          "kuća.",
+          0.7773
+        ],
+        [
+          "kuća.)",
+          0.7736
+        ],
+        [
+          "kuća,Priča",
+          0.7633
+        ],
+        [
+          "kuća!-",
+          0.7514
+        ],
+        [
+          "kuća\"\"",
+          0.7496
+        ],
+        [
+          "kućća",
+          0.7471
+        ],
+        [
+          "kuća/vikendica",
+          0.7443
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje,",
+            0.9066
+          ],
+          [
+            "riješenje-",
+            0.8922
+          ],
+          [
+            "rješenje",
+            0.8875
+          ],
+          [
+            "Riješenje",
+            0.868
+          ],
+          [
+            "riješenje.",
+            0.8651
+          ],
+          [
+            "'rješenje",
+            0.8646
+          ],
+          [
+            "riješenje;",
+            0.8641
+          ],
+          [
+            "riješenje\"",
+            0.8473
+          ],
+          [
+            "rješenje.U",
+            0.8377
+          ],
+          [
+            "rješenje'!",
+            0.8326
+          ]
+        ],
+        "rank": 3,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "močić",
+            0.7226
+          ],
+          [
+            "moč,",
+            0.7189
+          ],
+          [
+            "moči",
+            0.7004
+          ],
+          [
+            "močo",
+            0.6698
+          ],
+          [
+            "močad",
+            0.6468
+          ],
+          [
+            "moče",
+            0.6395
+          ],
+          [
+            "pomoč",
+            0.6379
+          ],
+          [
+            "močan",
+            0.6367
+          ],
+          [
+            "bropj",
+            0.6271
+          ],
+          [
+            "moči,",
+            0.6206
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatel",
+            0.9247
+          ],
+          [
+            "prijatelčj",
+            0.9223
+          ],
+          [
+            "prijatelima",
+            0.8944
+          ],
+          [
+            "prijateji",
+            0.8851
+          ],
+          [
+            "prijatelej",
+            0.8801
+          ],
+          [
+            "prijatel,",
+            0.8737
+          ],
+          [
+            "prijatej",
+            0.8698
+          ],
+          [
+            "prijatelj;",
+            0.8621
+          ],
+          [
+            "prijatel\"",
+            0.8601
+          ],
+          [
+            "prijateljii",
+            0.8449
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.6571,
+      "škola-obrazovanje": 0.5983,
+      "auto-vozilo": 0.716,
+      "kuća-stan": 0.4783,
+      "pisati-čitati": 0.8155,
+      "lijep-ružan": 0.5757,
+      "škola-banana": 0.1875
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princeza",
+            0.8543
+          ],
+          [
+            "princez",
+            0.8272
+          ],
+          [
+            "princca",
+            0.7677
+          ]
+        ],
+        "top_word": "princeza"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Pariz)",
+            0.5557
+          ],
+          [
+            "Pariz.i",
+            0.5343
+          ],
+          [
+            "Pariz'",
+            0.5282
+          ]
+        ],
+        "top_word": "Pariz)"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječa",
+            0.64
+          ],
+          [
+            ",dječak",
+            0.6211
+          ],
+          [
+            "dječak;",
+            0.6201
+          ]
+        ],
+        "top_word": "dječa"
+      }
+    }
+  },
+  {
+    "model": "ft_sg_d100_ws5_e3_mc2.bin",
+    "short_name": "SG-100",
+    "neighbors": {
+      "škola": [
+        [
+          "škola,od",
+          0.9047
+        ],
+        [
+          "-škola",
+          0.893
+        ],
+        [
+          "škola,",
+          0.8901
+        ],
+        [
+          "škole",
+          0.8536
+        ],
+        [
+          "škola,doma",
+          0.8501
+        ],
+        [
+          "eškola",
+          0.8481
+        ],
+        [
+          "škola.",
+          0.8435
+        ],
+        [
+          "škola;",
+          0.8382
+        ],
+        [
+          "E-škola",
+          0.8297
+        ],
+        [
+          "škole/vrtića",
+          0.8294
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati\"",
+          0.913
+        ],
+        [
+          "čitati",
+          0.8825
+        ],
+        [
+          "pisati,",
+          0.8819
+        ],
+        [
+          "napisati",
+          0.8434
+        ],
+        [
+          "čitatiti",
+          0.8384
+        ],
+        [
+          "napisati\"",
+          0.8253
+        ],
+        [
+          "čitati\"",
+          0.8231
+        ],
+        [
+          "pisati;",
+          0.8229
+        ],
+        [
+          "Pisati",
+          0.8221
+        ],
+        [
+          "pisati.",
+          0.8194
+        ]
+      ],
+      "trezor": [
+        [
+          "trezor,",
+          0.9182
+        ],
+        [
+          "trezore",
+          0.9149
+        ],
+        [
+          "trezora",
+          0.8992
+        ],
+        [
+          "trezori",
+          0.8957
+        ],
+        [
+          "trezor.",
+          0.8804
+        ],
+        [
+          "trezorce",
+          0.8754
+        ],
+        [
+          "trezor\"",
+          0.8718
+        ],
+        [
+          "trezoru",
+          0.8709
+        ],
+        [
+          "trezorci",
+          0.8615
+        ],
+        [
+          "trezorac.",
+          0.859
+        ]
+      ],
+      "moć": [
+        [
+          "moć,",
+          0.7822
+        ],
+        [
+          "superiornost",
+          0.7723
+        ],
+        [
+          "moć.",
+          0.7713
+        ],
+        [
+          "neupitnost",
+          0.7603
+        ],
+        [
+          "sigrnost",
+          0.7588
+        ],
+        [
+          "moć;",
+          0.7575
+        ],
+        [
+          "moć-",
+          0.7528
+        ],
+        [
+          "svemoć",
+          0.752
+        ],
+        [
+          "nedodirljivost",
+          0.7442
+        ],
+        [
+          "superiornost,",
+          0.7435
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,na",
+          0.8778
+        ],
+        [
+          "kuća,",
+          0.8749
+        ],
+        [
+          "kućah",
+          0.7997
+        ],
+        [
+          "kuća\"\"",
+          0.7831
+        ],
+        [
+          "kuća.",
+          0.7808
+        ],
+        [
+          "kuća,Priča",
+          0.7777
+        ],
+        [
+          "kuća.)",
+          0.7694
+        ],
+        [
+          "kuća/vikendica",
+          0.7636
+        ],
+        [
+          "vila",
+          0.7615
+        ],
+        [
+          "kuća')",
+          0.755
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje,",
+            0.9249
+          ],
+          [
+            "rješenje",
+            0.9242
+          ],
+          [
+            "'rješenje",
+            0.9064
+          ],
+          [
+            "riješenje-",
+            0.8858
+          ],
+          [
+            "Riješenje",
+            0.8778
+          ],
+          [
+            "rješenje'!",
+            0.8761
+          ],
+          [
+            "rješenje.U",
+            0.8746
+          ],
+          [
+            "riješenje.",
+            0.8738
+          ],
+          [
+            "riješenje;",
+            0.8695
+          ],
+          [
+            "rješenje,",
+            0.8611
+          ]
+        ],
+        "rank": 2,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "močić",
+            0.772
+          ],
+          [
+            "moč,",
+            0.7628
+          ],
+          [
+            "bropj",
+            0.7381
+          ],
+          [
+            "močo",
+            0.7212
+          ],
+          [
+            "talj",
+            0.7066
+          ],
+          [
+            "kor",
+            0.7019
+          ],
+          [
+            "moči",
+            0.6999
+          ],
+          [
+            "moče",
+            0.693
+          ],
+          [
+            "močad",
+            0.6911
+          ],
+          [
+            "gok",
+            0.6902
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatelčj",
+            0.9258
+          ],
+          [
+            "prijatel",
+            0.9215
+          ],
+          [
+            "prijatelima",
+            0.9054
+          ],
+          [
+            "prijateji",
+            0.883
+          ],
+          [
+            "prijatel,",
+            0.8808
+          ],
+          [
+            "prijatelej",
+            0.8803
+          ],
+          [
+            "prijatej",
+            0.8703
+          ],
+          [
+            "prijatel\"",
+            0.8591
+          ],
+          [
+            "prijateljii",
+            0.8499
+          ],
+          [
+            "prijateljiam",
+            0.8461
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.6627,
+      "škola-obrazovanje": 0.6601,
+      "auto-vozilo": 0.7269,
+      "kuća-stan": 0.5045,
+      "pisati-čitati": 0.8825,
+      "lijep-ružan": 0.6566,
+      "škola-banana": 0.181
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princez",
+            0.883
+          ],
+          [
+            "princca",
+            0.7857
+          ],
+          [
+            "princ/vojvoda",
+            0.7755
+          ]
+        ],
+        "top_word": "princez"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Pariz-Atena",
+            0.6228
+          ],
+          [
+            "Pariz'",
+            0.5761
+          ],
+          [
+            "Pariz)",
+            0.576
+          ]
+        ],
+        "top_word": "Pariz-Atena"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječa",
+            0.6655
+          ],
+          [
+            "dječak)",
+            0.6507
+          ],
+          [
+            "dječak;",
+            0.639
+          ]
+        ],
+        "top_word": "dječa"
+      }
+    }
+  },
+  {
+    "model": "ft_cbow_d200_ws5_e3_mc2.bin",
+    "short_name": "CB-200",
+    "neighbors": {
+      "škola": [
+        [
+          "-škola",
+          0.9457
+        ],
+        [
+          "'škola",
+          0.9428
+        ],
+        [
+          "E-škola",
+          0.9421
+        ],
+        [
+          "škola,.",
+          0.93
+        ],
+        [
+          "škola,",
+          0.9286
+        ],
+        [
+          "škola;",
+          0.9238
+        ],
+        [
+          "škola''",
+          0.9225
+        ],
+        [
+          "(škola",
+          0.9223
+        ],
+        [
+          "(\"škola",
+          0.9184
+        ],
+        [
+          "škola,od",
+          0.9169
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati;",
+          0.9348
+        ],
+        [
+          "pisati-",
+          0.9331
+        ],
+        [
+          "pisati'",
+          0.9258
+        ],
+        [
+          "pisati\"",
+          0.9201
+        ],
+        [
+          "pisati,",
+          0.9177
+        ],
+        [
+          "rapisati",
+          0.9108
+        ],
+        [
+          "čitati",
+          0.9054
+        ],
+        [
+          "napisati",
+          0.9044
+        ],
+        [
+          "\"pisati",
+          0.895
+        ],
+        [
+          "raditi/pisati",
+          0.8895
+        ]
+      ],
+      "trezor": [
+        [
+          "trezor,",
+          0.9173
+        ],
+        [
+          "trezor\"",
+          0.8834
+        ],
+        [
+          "trezorce",
+          0.8186
+        ],
+        [
+          "trezor?",
+          0.8088
+        ],
+        [
+          "trezorist",
+          0.7881
+        ],
+        [
+          "trezore",
+          0.777
+        ],
+        [
+          "trezori",
+          0.7766
+        ],
+        [
+          "trezorac.",
+          0.7742
+        ],
+        [
+          "trezor.",
+          0.7724
+        ],
+        [
+          "rezort",
+          0.7691
+        ]
+      ],
+      "moć": [
+        [
+          "opmoć",
+          0.8709
+        ],
+        [
+          "pmoć",
+          0.858
+        ],
+        [
+          "moć;",
+          0.8546
+        ],
+        [
+          "moć,",
+          0.8509
+        ],
+        [
+          "moć'",
+          0.8456
+        ],
+        [
+          "moć-",
+          0.845
+        ],
+        [
+          "moć\"",
+          0.8391
+        ],
+        [
+          "moćo",
+          0.8338
+        ],
+        [
+          "moćda",
+          0.8274
+        ],
+        [
+          "moćoi",
+          0.8258
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,na",
+          0.9159
+        ],
+        [
+          "kuća-",
+          0.9122
+        ],
+        [
+          "kuća,",
+          0.8984
+        ],
+        [
+          "kuća!-",
+          0.8977
+        ],
+        [
+          "kuća\"\"",
+          0.896
+        ],
+        [
+          "kuća;",
+          0.8947
+        ],
+        [
+          "kuća')",
+          0.8914
+        ],
+        [
+          "'kuća",
+          0.8844
+        ],
+        [
+          "kućah",
+          0.874
+        ],
+        [
+          "???kuća",
+          0.8702
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje-",
+            0.9643
+          ],
+          [
+            "riješenje;",
+            0.9637
+          ],
+          [
+            "riješenje,",
+            0.9581
+          ],
+          [
+            "razriješenje",
+            0.9396
+          ],
+          [
+            "odrješenje",
+            0.937
+          ],
+          [
+            "'rješenje",
+            0.9344
+          ],
+          [
+            "polurješenje",
+            0.9321
+          ],
+          [
+            "\"rješenje",
+            0.9292
+          ],
+          [
+            "rješenje",
+            0.9285
+          ],
+          [
+            "(rješenje",
+            0.9264
+          ]
+        ],
+        "rank": 9,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "močo",
+            0.9182
+          ],
+          [
+            "moč,",
+            0.8314
+          ],
+          [
+            "moûe",
+            0.8187
+          ],
+          [
+            "moÄ",
+            0.8023
+          ],
+          [
+            "močibob",
+            0.7905
+          ],
+          [
+            "moZe",
+            0.7904
+          ],
+          [
+            "moGU",
+            0.7868
+          ],
+          [
+            "moët",
+            0.7801
+          ],
+          [
+            "mooi",
+            0.7783
+          ],
+          [
+            "może",
+            0.7602
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatelčj",
+            0.929
+          ],
+          [
+            "prijatel\"",
+            0.9071
+          ],
+          [
+            "prijatelej",
+            0.9064
+          ],
+          [
+            "prijatelstzvo",
+            0.9063
+          ],
+          [
+            "prijateji",
+            0.9053
+          ],
+          [
+            "prijatel",
+            0.9036
+          ],
+          [
+            "prijateljevali",
+            0.9018
+          ],
+          [
+            "prijateljii",
+            0.9004
+          ],
+          [
+            "sprijateljiili",
+            0.8999
+          ],
+          [
+            "prijatelji(ca)ma",
+            0.8969
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.5431,
+      "škola-obrazovanje": 0.5184,
+      "auto-vozilo": 0.6895,
+      "kuća-stan": 0.3585,
+      "pisati-čitati": 0.9054,
+      "lijep-ružan": 0.6489,
+      "škola-banana": 0.2962
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princezo",
+            0.7749
+          ],
+          [
+            "princ.-",
+            0.7696
+          ],
+          [
+            "princezomm",
+            0.7684
+          ]
+        ],
+        "top_word": "princezo"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Pariz-Kabal-Pariz",
+            0.6227
+          ],
+          [
+            "Pariz-Brest-Pariz",
+            0.6082
+          ],
+          [
+            "Pariz;",
+            0.5884
+          ]
+        ],
+        "top_word": "Pariz-Kabal-Pariz"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječake*",
+            0.625
+          ],
+          [
+            "dječak!,",
+            0.6021
+          ],
+          [
+            "dječak!\")",
+            0.5988
+          ]
+        ],
+        "top_word": "dječake*"
+      }
+    }
+  },
+  {
+    "model": "ft_sg_d300_ws10_e10_mc2_minn2_maxn7.bin",
+    "short_name": "SG-300-N7",
+    "neighbors": {
+      "škola": [
+        [
+          "škola,",
+          0.891
+        ],
+        [
+          "škola.",
+          0.8564
+        ],
+        [
+          "škole",
+          0.856
+        ],
+        [
+          "učenika",
+          0.8289
+        ],
+        [
+          "škol",
+          0.8185
+        ],
+        [
+          "učenike",
+          0.8102
+        ],
+        [
+          "učenika,",
+          0.799
+        ],
+        [
+          "nastava",
+          0.7944
+        ],
+        [
+          "nastavu",
+          0.7879
+        ],
+        [
+          "gimnazija",
+          0.7869
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati,",
+          0.8919
+        ],
+        [
+          "čitati",
+          0.8534
+        ],
+        [
+          "pisati.",
+          0.8456
+        ],
+        [
+          "napisati",
+          0.8346
+        ],
+        [
+          "pisati\"",
+          0.819
+        ],
+        [
+          "čitatiti",
+          0.8127
+        ],
+        [
+          "napisati,",
+          0.7971
+        ],
+        [
+          "čitati.",
+          0.7808
+        ],
+        [
+          "čitati,",
+          0.7791
+        ],
+        [
+          "napisati.",
+          0.7783
+        ]
+      ],
+      "trezor": [
+        [
+          "trezore",
+          0.8526
+        ],
+        [
+          "trezori",
+          0.8478
+        ],
+        [
+          "trezor\"",
+          0.8381
+        ],
+        [
+          "trezor,",
+          0.8375
+        ],
+        [
+          "trezor.",
+          0.8328
+        ],
+        [
+          "trezorom",
+          0.8246
+        ],
+        [
+          "trezore.",
+          0.8206
+        ],
+        [
+          "trezori.",
+          0.8178
+        ],
+        [
+          "trezora",
+          0.8104
+        ],
+        [
+          "trezoru.",
+          0.8089
+        ]
+      ],
+      "moć": [
+        [
+          "moć,",
+          0.8228
+        ],
+        [
+          "moć.",
+          0.8
+        ],
+        [
+          "superiornost,",
+          0.7188
+        ],
+        [
+          "sposobnost",
+          0.7117
+        ],
+        [
+          "superiornost",
+          0.711
+        ],
+        [
+          "superiornost.",
+          0.7042
+        ],
+        [
+          "svemoć,",
+          0.6945
+        ],
+        [
+          "moć.)",
+          0.6939
+        ],
+        [
+          "svemoć",
+          0.6936
+        ],
+        [
+          "sveprisutnost,",
+          0.6932
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća,",
+          0.8819
+        ],
+        [
+          "kuća.",
+          0.818
+        ],
+        [
+          "vila",
+          0.7694
+        ],
+        [
+          "kuće",
+          0.7691
+        ],
+        [
+          "Kuća",
+          0.7548
+        ],
+        [
+          "kuću",
+          0.7309
+        ],
+        [
+          "kućama",
+          0.6812
+        ],
+        [
+          "kućarine",
+          0.676
+        ],
+        [
+          "zgrada",
+          0.6636
+        ],
+        [
+          "kuća:",
+          0.6635
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "riješenje,",
+            0.9219
+          ],
+          [
+            "riješenje.",
+            0.885
+          ],
+          [
+            "rješenje",
+            0.8737
+          ],
+          [
+            "riješenje-",
+            0.8547
+          ],
+          [
+            "riješenjem",
+            0.8297
+          ],
+          [
+            "rješenje,",
+            0.8264
+          ],
+          [
+            "riješenje\"",
+            0.8259
+          ],
+          [
+            "riješenja",
+            0.8239
+          ],
+          [
+            "Riješenje",
+            0.818
+          ],
+          [
+            "riješenje;",
+            0.8149
+          ]
+        ],
+        "rank": 3,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "moč,",
+            0.6623
+          ],
+          [
+            "močić",
+            0.6506
+          ],
+          [
+            "nadmoč",
+            0.574
+          ],
+          [
+            "putica",
+            0.571
+          ],
+          [
+            "močna",
+            0.5652
+          ],
+          [
+            "močan",
+            0.5636
+          ],
+          [
+            "njemen",
+            0.5629
+          ],
+          [
+            "močinić",
+            0.5581
+          ],
+          [
+            "stratški",
+            0.5573
+          ],
+          [
+            "albašir",
+            0.5533
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "prijatel",
+            0.9155
+          ],
+          [
+            "prijatelima",
+            0.9103
+          ],
+          [
+            "prijateljii",
+            0.8337
+          ],
+          [
+            "prijatelčj",
+            0.8238
+          ],
+          [
+            "prijatel\"",
+            0.8186
+          ],
+          [
+            "prijatel,",
+            0.8139
+          ],
+          [
+            "prijateji",
+            0.8093
+          ],
+          [
+            "prijateljce",
+            0.8047
+          ],
+          [
+            "prijateljiam",
+            0.7962
+          ],
+          [
+            "prijateljiski",
+            0.796
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.6783,
+      "škola-obrazovanje": 0.6845,
+      "auto-vozilo": 0.7437,
+      "kuća-stan": 0.5747,
+      "pisati-čitati": 0.8534,
+      "lijep-ružan": 0.5453,
+      "škola-banana": 0.1878
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "princeza",
+            0.8687
+          ],
+          [
+            "vojvotkinj",
+            0.8485
+          ],
+          [
+            "princa",
+            0.8224
+          ]
+        ],
+        "top_word": "princeza"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Francusku",
+            0.6809
+          ],
+          [
+            "Parizu",
+            0.6221
+          ],
+          [
+            "Pariz)",
+            0.5864
+          ]
+        ],
+        "top_word": "Francusku"
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječaka",
+            0.6739
+          ],
+          [
+            "dječak,",
+            0.5853
+          ],
+          [
+            "Devetogodišnji",
+            0.5563
+          ]
+        ],
+        "top_word": "dječaka"
+      }
+    }
+  },
+  {
+    "model": "facebook_cc_hr_300.bin",
+    "short_name": "FB-300",
+    "neighbors": {
+      "škola": [
+        [
+          "škola.U",
+          0.7677
+        ],
+        [
+          "škola.",
+          0.767
+        ],
+        [
+          "škola-",
+          0.7468
+        ],
+        [
+          "škola10.",
+          0.7219
+        ],
+        [
+          "eko-škola",
+          0.7073
+        ],
+        [
+          "auto-škola",
+          0.7029
+        ],
+        [
+          "Eko-škola",
+          0.6947
+        ],
+        [
+          "Ekoškola",
+          0.6896
+        ],
+        [
+          "osn.škola",
+          0.6796
+        ],
+        [
+          "Škola",
+          0.6772
+        ]
+      ],
+      "pisati": [
+        [
+          "pisati.",
+          0.742
+        ],
+        [
+          "napisati",
+          0.7155
+        ],
+        [
+          "pisat",
+          0.6627
+        ],
+        [
+          "čitati",
+          0.6572
+        ],
+        [
+          "Pisati",
+          0.6552
+        ],
+        [
+          "pisati.--",
+          0.6378
+        ],
+        [
+          "napisati.",
+          0.6336
+        ],
+        [
+          "dopisati",
+          0.6239
+        ],
+        [
+          "odpisati",
+          0.6159
+        ],
+        [
+          "izpisati",
+          0.6148
+        ]
+      ],
+      "trezor": [
+        [
+          "trezora",
+          0.6827
+        ],
+        [
+          "trezoru",
+          0.6511
+        ],
+        [
+          "trezore",
+          0.651
+        ],
+        [
+          "trezorski",
+          0.6136
+        ],
+        [
+          "Trezor",
+          0.6011
+        ],
+        [
+          "trezoraca",
+          0.5893
+        ],
+        [
+          "trezorima",
+          0.5732
+        ],
+        [
+          "ArTrezor",
+          0.5422
+        ],
+        [
+          "trezorske",
+          0.521
+        ],
+        [
+          "trezorom",
+          0.497
+        ]
+      ],
+      "moć": [
+        [
+          "vlast",
+          0.5844
+        ],
+        [
+          "sposobnost",
+          0.5813
+        ],
+        [
+          "ovostranost",
+          0.5701
+        ],
+        [
+          "moćnost",
+          0.5629
+        ],
+        [
+          "vaţnost",
+          0.556
+        ],
+        [
+          "tj.sposobnost",
+          0.5543
+        ],
+        [
+          "poboţnost",
+          0.5485
+        ],
+        [
+          "svemoć",
+          0.5434
+        ],
+        [
+          "čarobnost",
+          0.5414
+        ],
+        [
+          "liĉnost",
+          0.5359
+        ]
+      ],
+      "kuća": [
+        [
+          "kuća.",
+          0.7064
+        ],
+        [
+          "-kuća",
+          0.6871
+        ],
+        [
+          "natkuća",
+          0.6773
+        ],
+        [
+          "kuća.s",
+          0.6768
+        ],
+        [
+          "kuća-",
+          0.6765
+        ],
+        [
+          "tahkuekemy-kuća",
+          0.6645
+        ],
+        [
+          "wayuu-kuća",
+          0.6438
+        ],
+        [
+          "kućae",
+          0.6432
+        ],
+        [
+          "Svrzina",
+          0.6211
+        ],
+        [
+          "Baheng-kuća",
+          0.6075
+        ]
+      ]
+    },
+    "spelling": {
+      "riješenje": {
+        "correct": "rješenje",
+        "neighbors": [
+          [
+            "rješenje",
+            0.7584
+          ],
+          [
+            "Riješenje",
+            0.7342
+          ],
+          [
+            "riješenj",
+            0.7166
+          ],
+          [
+            "riješenje.--",
+            0.7144
+          ],
+          [
+            "riješenja",
+            0.6956
+          ],
+          [
+            "odriješenje",
+            0.6844
+          ],
+          [
+            "razriješenje",
+            0.6841
+          ],
+          [
+            "griješenje",
+            0.6771
+          ],
+          [
+            "miješenje",
+            0.6662
+          ],
+          [
+            "rešenje",
+            0.665
+          ]
+        ],
+        "rank": 1,
+        "found": true
+      },
+      "moč": {
+        "correct": "moć",
+        "neighbors": [
+          [
+            "uţiva",
+            0.4114
+          ],
+          [
+            "mrznja",
+            0.3914
+          ],
+          [
+            "nafaku",
+            0.3884
+          ],
+          [
+            "tudjeg",
+            0.3817
+          ],
+          [
+            "mir.",
+            0.3776
+          ],
+          [
+            "bol.",
+            0.3744
+          ],
+          [
+            "uzda",
+            0.3705
+          ],
+          [
+            "ena.",
+            0.3675
+          ],
+          [
+            "muţa",
+            0.3669
+          ],
+          [
+            "ina.",
+            0.3652
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      },
+      "prijateli": {
+        "correct": "prijatelj",
+        "neighbors": [
+          [
+            "dejateli",
+            0.7667
+          ],
+          [
+            "prijatel",
+            0.743
+          ],
+          [
+            "Prijateli",
+            0.7374
+          ],
+          [
+            "prijateqi",
+            0.7118
+          ],
+          [
+            "pateli",
+            0.7054
+          ],
+          [
+            "roditeli",
+            0.7021
+          ],
+          [
+            "prijateq",
+            0.6973
+          ],
+          [
+            "prijateqima",
+            0.6939
+          ],
+          [
+            "prijateqa",
+            0.6884
+          ],
+          [
+            "prijatelj.--",
+            0.6792
+          ]
+        ],
+        "rank": -1,
+        "found": false
+      }
+    },
+    "similarity": {
+      "škola-učenik": 0.374,
+      "škola-obrazovanje": 0.377,
+      "auto-vozilo": 0.4085,
+      "kuća-stan": 0.3222,
+      "pisati-čitati": 0.6572,
+      "lijep-ružan": 0.5732,
+      "škola-banana": 0.1392
+    },
+    "analogies": {
+      "kralj:kraljica::princ:?": {
+        "expected": "princeza",
+        "results": [
+          [
+            "Šprinc",
+            0.5736
+          ],
+          [
+            "princez",
+            0.5307
+          ],
+          [
+            "princa",
+            0.5238
+          ]
+        ],
+        "top_word": "Šprinc"
+      },
+      "Zagreb:Hrvatska::Pariz:?": {
+        "expected": "Francuska",
+        "results": [
+          [
+            "Pariz.",
+            0.5467
+          ],
+          [
+            "Pariz-Orly",
+            0.5462
+          ],
+          [
+            "Parizo",
+            0.5461
+          ]
+        ],
+        "top_word": "Pariz."
+      },
+      "muškarac:žena::dječak:?": {
+        "expected": "djevojčica",
+        "results": [
+          [
+            "dječaka",
+            0.5849
+          ],
+          [
+            "dječaka.",
+            0.531
+          ],
+          [
+            "mladić",
+            0.5215
+          ]
+        ],
+        "top_word": "dječaka"
+      }
+    }
+  }
+]

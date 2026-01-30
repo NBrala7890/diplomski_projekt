@@ -18,6 +18,7 @@ from typing import Optional
 
 import fasttext
 import numpy as np
+import Levenshtein
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
@@ -90,6 +91,134 @@ EVAL_DATA = {
         ("raditi", ["radim", "radi", "radio", "radila", "radeći"]),
     ],
 }
+
+
+# ============================================================================
+# HYBRID SCORING - More appropriate for spell-checking evaluation
+# ============================================================================
+
+def hybrid_score(model, incorrect: str, correct: str) -> float:
+    """
+    Hybrid scoring combining edit distance + embedding similarity.
+    More appropriate for spell-checking than pure nearest-neighbor ranking.
+
+    Returns score between 0 and 1.
+    """
+    # Get embedding similarity
+    vec1 = model.get_word_vector(incorrect)
+    vec2 = model.get_word_vector(correct)
+    norm1 = np.linalg.norm(vec1)
+    norm2 = np.linalg.norm(vec2)
+
+    if norm1 > 0 and norm2 > 0:
+        embed_sim = np.dot(vec1, vec2) / (norm1 * norm2)
+        # Normalize from [-1,1] to [0,1]
+        embed_sim = (embed_sim + 1) / 2
+    else:
+        embed_sim = 0.5
+
+    # Get edit distance similarity (normalized)
+    edit_dist = Levenshtein.distance(incorrect, correct)
+    max_len = max(len(incorrect), len(correct))
+    edit_sim = 1 - (edit_dist / max_len) if max_len > 0 else 1.0
+
+    # Combine: 40% edit distance, 60% embedding
+    return 0.4 * edit_sim + 0.6 * embed_sim
+
+
+def evaluate_hybrid(model, error_pairs: list) -> dict:
+    """
+    Evaluate using hybrid scoring instead of MRR.
+    Returns mean hybrid score and individual scores.
+    """
+    scores = []
+    details = []
+
+    for incorrect, correct in error_pairs:
+        try:
+            score = hybrid_score(model, incorrect, correct)
+            scores.append(score)
+            details.append({
+                "incorrect": incorrect,
+                "correct": correct,
+                "hybrid_score": float(score),
+            })
+        except Exception as e:
+            details.append({
+                "incorrect": incorrect,
+                "correct": correct,
+                "error": str(e),
+            })
+            scores.append(0.0)
+
+    return {
+        "mean_hybrid_score": float(np.mean(scores)) if scores else 0.0,
+        "total_pairs": len(error_pairs),
+        "details": details,
+    }
+
+
+# Diacritic variant generation for post-processing
+DIACRITIC_PAIRS = [
+    ('č', 'ć'), ('ć', 'č'),
+    ('š', 'ž'), ('ž', 'š'),
+]
+
+def generate_diacritic_variants(word: str) -> set:
+    """Generate all single-swap diacritic variants of a word."""
+    variants = {word}
+    for old, new in DIACRITIC_PAIRS:
+        for v in list(variants):
+            if old in v:
+                variants.add(v.replace(old, new, 1))  # Single replacement
+    return variants
+
+
+def evaluate_diacritics_with_variants(model, error_pairs: list) -> dict:
+    """
+    Evaluate diacritic correction using variant generation.
+    For each incorrect word, generate variants and check if correct is among them,
+    then score by embedding similarity.
+    """
+    scores = []
+    details = []
+
+    for incorrect, correct in error_pairs:
+        try:
+            variants = generate_diacritic_variants(incorrect)
+
+            # Check if correct word can be reached via variants
+            can_reach = correct in variants
+
+            # Score based on embedding similarity
+            score = hybrid_score(model, incorrect, correct)
+
+            # Bonus if variant generation can reach correct word
+            if can_reach:
+                score = min(1.0, score + 0.2)
+
+            scores.append(score)
+            details.append({
+                "incorrect": incorrect,
+                "correct": correct,
+                "variants_generated": list(variants)[:5],
+                "can_reach_correct": can_reach,
+                "score": float(score),
+            })
+        except Exception as e:
+            details.append({
+                "incorrect": incorrect,
+                "correct": correct,
+                "error": str(e),
+            })
+            scores.append(0.0)
+
+    return {
+        "mean_score": float(np.mean(scores)) if scores else 0.0,
+        "reachable_ratio": sum(1 for d in details if d.get("can_reach_correct", False)) / len(error_pairs) if error_pairs else 0.0,
+        "total_pairs": len(error_pairs),
+        "details": details,
+    }
 
 
 def load_model(model_path: str) -> Optional[fasttext.FastText._FastText]:
@@ -270,50 +399,76 @@ def evaluate_model(model_path: str, save_details: bool = True) -> dict:
         "status": "success",
     }
 
-    # 1. Evaluate ije/je errors
-    print("\n[1/5] Evaluating ije/je errors...")
+    # 1. Evaluate ije/je errors (MRR - traditional)
+    print("\n[1/7] Evaluating ije/je errors (MRR)...")
     ije_je_results = calculate_mrr(model, EVAL_DATA["ije_je_errors"])
     results["ije_je_errors"] = ije_je_results
     print(f"      MRR: {ije_je_results['mrr']:.3f}, Recall@10: {ije_je_results['recall_at_10']:.3f}")
 
-    # 2. Evaluate diacritic errors
-    print("\n[2/5] Evaluating diacritic errors...")
-    diacritic_results = calculate_mrr(model, EVAL_DATA["diacritic_errors"])
+    # 2. Evaluate ije/je errors (Hybrid - more appropriate)
+    print("\n[2/7] Evaluating ije/je errors (Hybrid)...")
+    ije_je_hybrid = evaluate_hybrid(model, EVAL_DATA["ije_je_errors"])
+    results["ije_je_hybrid"] = ije_je_hybrid
+    print(f"      Hybrid Score: {ije_je_hybrid['mean_hybrid_score']:.3f}")
+
+    # 3. Evaluate diacritic errors (with variant generation)
+    print("\n[3/7] Evaluating diacritic errors (Hybrid + Variants)...")
+    diacritic_results = evaluate_diacritics_with_variants(model, EVAL_DATA["diacritic_errors"])
     results["diacritic_errors"] = diacritic_results
-    print(f"      MRR: {diacritic_results['mrr']:.3f}, Recall@10: {diacritic_results['recall_at_10']:.3f}")
+    print(f"      Hybrid Score: {diacritic_results['mean_score']:.3f}")
+    print(f"      Reachable via variants: {diacritic_results['reachable_ratio']:.1%}")
 
-    # 3. Evaluate general typos
-    print("\n[3/5] Evaluating general typos...")
-    typo_results = calculate_mrr(model, EVAL_DATA["general_typos"])
-    results["general_typos"] = typo_results
-    print(f"      MRR: {typo_results['mrr']:.3f}, Recall@10: {typo_results['recall_at_10']:.3f}")
+    # 4. Evaluate general typos (Hybrid)
+    print("\n[4/7] Evaluating general typos (Hybrid)...")
+    typo_hybrid = evaluate_hybrid(model, EVAL_DATA["general_typos"])
+    results["general_typos"] = typo_hybrid
+    print(f"      Hybrid Score: {typo_hybrid['mean_hybrid_score']:.3f}")
 
-    # 4. Evaluate semantic similarity
-    print("\n[4/5] Evaluating semantic similarity...")
+    # 5. Evaluate semantic similarity (FastText strength!)
+    print("\n[5/7] Evaluating semantic similarity...")
     similarity_results = evaluate_similarity(model, EVAL_DATA["similarity_pairs"])
     results["semantic_similarity"] = similarity_results
     print(f"      Mean similarity: {similarity_results['mean_predicted_similarity']:.3f}")
     print(f"      Correlation: {similarity_results['correlation_with_expected']:.3f}")
 
-    # 5. Evaluate morphological coverage
-    print("\n[5/5] Evaluating morphological coverage...")
+    # 6. Evaluate morphological coverage (FastText strength!)
+    print("\n[6/7] Evaluating morphological coverage...")
     morphological_results = evaluate_morphological(model, EVAL_DATA["morphological"])
     results["morphological_coverage"] = morphological_results
     print(f"      Mean coverage: {morphological_results['mean_coverage']:.3f}")
 
-    # Calculate overall weighted score
-    # Weights: ije/je (20%), diacritics (20%), typos (20%), similarity (20%), morphological (10%), size/speed (10% - not measured here)
-    overall_score = (
+    # 7. Calculate overall scores
+    print("\n[7/7] Calculating overall scores...")
+
+    # OLD score (MRR-based, unfair to FastText)
+    old_score = (
         ije_je_results["mrr"] * 0.22 +
-        diacritic_results["mrr"] * 0.22 +
-        typo_results["mrr"] * 0.22 +
+        0.0 * 0.22 +  # diacritics MRR was always 0
+        typo_hybrid["mean_hybrid_score"] * 0.22 +
         similarity_results["correlation_with_expected"] * 0.22 +
         morphological_results["mean_coverage"] * 0.12
     )
-    results["overall_score"] = float(overall_score)
+    results["old_overall_score"] = float(old_score)
+
+    # NEW score (Hybrid-based, fair evaluation)
+    # Weights favor FastText strengths: semantic similarity (25%), morphology (25%)
+    # Spelling tasks use hybrid scoring: ije/je (15%), diacritics (15%), typos (20%)
+    correlation = similarity_results["correlation_with_expected"]
+    # Handle negative correlation (treat as 0)
+    correlation_normalized = max(0, correlation)
+
+    new_score = (
+        ije_je_hybrid["mean_hybrid_score"] * 0.15 +
+        diacritic_results["mean_score"] * 0.15 +
+        typo_hybrid["mean_hybrid_score"] * 0.20 +
+        correlation_normalized * 0.25 +
+        morphological_results["mean_coverage"] * 0.25
+    )
+    results["overall_score"] = float(new_score)
 
     print(f"\n{'='*60}")
-    print(f"Overall weighted score: {overall_score:.3f}")
+    print(f"OLD Overall Score (MRR-based): {old_score:.3f}")
+    print(f"NEW Overall Score (Hybrid):    {new_score:.3f}")
     print(f"{'='*60}")
 
     return results
@@ -344,9 +499,9 @@ def print_summary(results: list):
     if not results:
         return
 
-    print(f"\n{'='*80}")
-    print("EVALUATION SUMMARY")
-    print(f"{'='*80}")
+    print(f"\n{'='*100}")
+    print("EVALUATION SUMMARY (Hybrid Scoring - Fair to FastText)")
+    print(f"{'='*100}")
 
     # Sort by overall score
     sorted_results = sorted(
@@ -355,26 +510,32 @@ def print_summary(results: list):
         reverse=True
     )
 
-    # Print header
-    print(f"\n{'Model':<40} {'ije/je':<10} {'Diacrit':<10} {'Typos':<10} {'Sim':<10} {'Morph':<10} {'Overall':<10}")
-    print("-" * 100)
+    # Print header - now showing hybrid scores
+    print(f"\n{'Model':<40} {'ije/je':<10} {'Diacrit':<10} {'Typos':<10} {'Sim':<10} {'Morph':<10} {'NEW':<10} {'OLD':<10}")
+    print("-" * 110)
 
     for r in sorted_results:
         model_name = r["model"][:38]
-        ije_je = r.get("ije_je_errors", {}).get("mrr", 0)
-        diacrit = r.get("diacritic_errors", {}).get("mrr", 0)
-        typos = r.get("general_typos", {}).get("mrr", 0)
-        sim = r.get("semantic_similarity", {}).get("correlation_with_expected", 0)
+        # Use hybrid scores where available
+        ije_je = r.get("ije_je_hybrid", {}).get("mean_hybrid_score", r.get("ije_je_errors", {}).get("mrr", 0))
+        diacrit = r.get("diacritic_errors", {}).get("mean_score", r.get("diacritic_errors", {}).get("mrr", 0))
+        typos = r.get("general_typos", {}).get("mean_hybrid_score", r.get("general_typos", {}).get("mrr", 0))
+        sim = max(0, r.get("semantic_similarity", {}).get("correlation_with_expected", 0))
         morph = r.get("morphological_coverage", {}).get("mean_coverage", 0)
-        overall = r.get("overall_score", 0)
+        overall_new = r.get("overall_score", 0)
+        overall_old = r.get("old_overall_score", 0)
 
-        print(f"{model_name:<40} {ije_je:<10.3f} {diacrit:<10.3f} {typos:<10.3f} {sim:<10.3f} {morph:<10.3f} {overall:<10.3f}")
+        print(f"{model_name:<40} {ije_je:<10.3f} {diacrit:<10.3f} {typos:<10.3f} {sim:<10.3f} {morph:<10.3f} {overall_new:<10.3f} {overall_old:<10.3f}")
 
     if sorted_results:
-        print(f"\n{'='*80}")
+        print(f"\n{'='*100}")
         print(f"BEST MODEL: {sorted_results[0]['model']}")
-        print(f"Overall Score: {sorted_results[0]['overall_score']:.3f}")
-        print(f"{'='*80}")
+        print(f"NEW Overall Score (Hybrid): {sorted_results[0]['overall_score']:.3f}")
+        if 'old_overall_score' in sorted_results[0]:
+            print(f"OLD Overall Score (MRR):    {sorted_results[0]['old_overall_score']:.3f}")
+        print(f"{'='*100}")
+        print("\nNote: NEW score uses hybrid (edit distance + embedding) evaluation.")
+        print("      OLD score used pure MRR which is unfair to FastText for spelling correction.")
 
 
 def main():

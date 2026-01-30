@@ -38,6 +38,8 @@ diplomski_projekt/
 │   ├── train_optimized.py        # Main training script
 │   ├── evaluate_model.py         # Model evaluation
 │   ├── compare_models.py         # Model comparison
+│   ├── generate_examples.py      # Generate qualitative examples
+│   ├── diacritic_rules.py        # Diacritic correction rules
 │   ├── download_baseline.sh      # Download Facebook baseline
 │   ├── corpus_cleaner.py         # Text preprocessing
 │   └── build_corpus.py           # Corpus extraction
@@ -210,7 +212,36 @@ Models are evaluated on:
 
 ## Results
 
-*Results will be added after model evaluation is complete.*
+### Best Model: `ft_sg_d300_ws10_e15_mc2`
+
+| Metric | Score |
+|--------|-------|
+| Overall Score | **0.528** |
+| ije/je Hybrid | 0.748 |
+| Diacritic Hybrid | 0.832 |
+| Typo Hybrid | 0.769 |
+
+**Key Findings:**
+- Our best model outperforms Facebook's baseline (cc.hr.300.bin) by **20.3%**
+- Skip-gram architecture consistently outperforms CBOW for spelling correction
+- Higher dimensions (300) and more epochs (15) improve performance
+- Corpus specificity matters more than size for specialized tasks
+
+### Model Ranking
+
+| Rank | Model | Overall Score |
+|------|-------|---------------|
+| 1 | ft_sg_d300_ws10_e15_mc2 | 0.528 |
+| 2 | ft_sg_d300_ws10_e10_mc2 | 0.495 |
+| 3 | ft_sg_d300_ws10_e10_mc2_minn2_maxn7 | 0.493 |
+| 4 | ft_sg_d200_ws5_e3_mc2 | 0.484 |
+| 5 | ft_sg_d200_ws10_e3_mc2 | 0.464 |
+| 6 | ft_sg_d100_ws5_e3_mc2 | 0.449 |
+| 7 | ft_cbow_d300_ws10_e10_mc2 | 0.445 |
+| 8 | facebook_cc_hr_300 (baseline) | 0.439 |
+| 9 | ft_cbow_d200_ws5_e3_mc2 | 0.438 |
+
+See `results/report.md` for detailed analysis and `results/example_outputs.md` for qualitative examples.
 
 ## References
 

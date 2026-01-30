@@ -55,5 +55,24 @@
       "maxn": 6
     },
     "timestamp": "2026-01-29T02:44:34.877511"
+  },
+  {
+    "name": "sg_d300_ws10_e10_mc2_minn2_maxn7",
+    "status": "success",
+    "model_path": "/home/teom/uni/d-projekt/diplomski_projekt/models/ft_sg_d300_ws10_e10_mc2_minn2_maxn7.bin",
+    "training_time_seconds": 50064.63059067726,
+    "training_time_minutes": 834.4105098446211,
+    "vocab_size": 2918267,
+    "config": {
+      "name": "sg_d300_ws10_e10_mc2_minn2_maxn7",
+      "model": "skipgram",
+      "dim": 300,
+      "ws": 10,
+      "epoch": 10,
+      "minCount": 2,
+      "minn": 2,
+      "maxn": 7
+    },
+    "timestamp": "2026-01-30T00:35:43.374682"
   }
 ]
